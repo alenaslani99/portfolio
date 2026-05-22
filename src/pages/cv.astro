@@ -1,0 +1,71 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Detail-oriented software developer with hands-on experience building full-stack web applications, CRUD systems, and reporting workflows. Comfortable working across the stack with PHP, Laravel, JavaScript, Vue.js, and SQL databases. Experienced in ERP environments, authentication and authorization systems, REST API design, and collaborating with both technical and non-technical stakeholders. Actively uses AI-powered development tools to improve productivity, debugging, and delivery speed.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Department School of Information and Communication Technologies, Belgrade"
+      subtitle="2021 - 2026, ICT College (https://ict.edu.rs/)"
+    />
+    <TimeLineElement
+      title="Gymnasium - General Studies"
+      subtitle="2017 - 2021, Velika Plana"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Programmer at Cmana - Krnjevo"
+      subtitle="June 2025 to September 2025"
+    >
+      Worked on improving and automating employee time tracking and reporting processes within a complex ERP system used across multiple departments. Developed and optimized SQL Server queries to process real-time attendance data, including clock-ins, clock-outs, and break records. Built and maintained reporting workflows that delivered accurate and timely data to finance, retail, and executive management. Collaborated with stakeholders to understand reporting requirements and adjust outputs based on payroll and operational needs. Improved reporting reliability, reduced manual data handling, and increased efficiency in payroll-related workflows.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Vue.js</li>
+    <li>jQuery</li>
+    <li>Bootstrap</li>
+    <li>React</li>
+    <li>PHP</li>
+    <li>Laravel</li>
+    <li>C#</li>
+    <li>MySQL</li>
+    <li>SQL Server</li>
+    <li>Git</li>
+    <li>GitHub</li>
+    <li>Linux</li>
+    <li>REST APIs</li>
+    <li>Inertia.js</li>
+    <li>TanStack Start</li>
+    <li>Resend</li>
+    <li>Postman</li>
+    <li>ERP Systems</li>
+    <li>AI Development Tools</li>
+  </ul>
+</BaseLayout>

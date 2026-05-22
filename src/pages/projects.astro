@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Killa"
+    img="/killa.rs.webp"
+    desc="Designed and developed a modern brand presentation website for Killa, with a strong emphasis on visual design, structure, and overall brand experience. The website includes e-commerce functionality, email handling through Resend, and routing powered by TanStack Start."
+    url="https://killa.rs"
+    target="_blank"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Drip N Drill"
+    img="/post_img.webp"
+    desc="A modern streetwear e-commerce project focused on strong brand presentation, product discovery, and a smooth online shopping experience. Built using Laravel , MySQL, Inertia.js, and Vue.js, combining a solid backend architecture with a responsive and clean frontend experience."
+    url="https://github.com/alenaslani99/dripndrill"
+    target="_blank"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Quaestio"
+    img="/quaestio.webp"
+    desc="A full-stack SaaS survey platform focused on form creation, questionnaire management, and intuitive data collection workflows. Developed using Laravel, MySQL, Inertia.js, and Vue.js, and includes AI-assisted question generation through LLM."
+    url="https://github.com/alenaslani99/quaestio"
+    target="_blank"
+  />
+</BaseLayout>
